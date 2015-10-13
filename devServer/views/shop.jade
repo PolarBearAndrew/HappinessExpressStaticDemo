@@ -1,0 +1,31 @@
+extends container
+
+block head
+  link(rel="stylesheet", href="asset/stylesheets/main.css")
+
+
+
+block content
+
+  - var data = [];
+  - data.push({ img: 'asset/img/status/gift02.jpg', title: '羊皮紙質料包裝禮盒', describe: '300 x 400' });
+  - data.push({ img: 'asset/img/status/gift03.jpg', title: '遠洋白蠟燭風格包裝', describe: '300 x 600' });
+  - data.push({ img: 'asset/img/status/gift04.jpg', title: '小型可愛風格', describe: '150 x 150' });
+  - data.push({ img: 'asset/img/status/gift05.jpg', title: '紫色典雅造型包裝', describe: '400 x 600' });
+  - data.push({ img: 'asset/img/status/gift06.jpg', title: '冰雪星星小包裝盒', describe: '150 x 150' });
+  - data.push({ img: 'asset/img/status/gift01.jpg', title: '地中海藍包裝禮盒', describe: '300 x 200' });
+
+  .container
+    - for( var t = 0; t < 3; t++ )
+      .row
+        - for( var i = 0; i < data.length; i++ )
+            .col-md-4
+              .thumbnail
+                img(src=data[i].img, alt='...')
+                .caption
+                  h3= data[i].title
+                  p= data[i].describe
+                  p
+                    a.btn.btn-primary(href='#', role='button') 加入禮物籃
+                    a.btn.btn-default(href='#', role='button') 查看詳情
+  include footer
