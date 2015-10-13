@@ -17,59 +17,28 @@ html(lang="en")
         nav.navbar.navbar-default.navbar-static-top(role='navigation')
           .container
             .navbar-header
-              a.logo(href='./' )
+              a.logo(href='home.html' )
                 img(src="/asset/img/icon/icon-title.png", alt="", style="width:140px; margin-top:4px")
             #navbar.navbar-collapse.collapse
               ul.nav.navbar-nav
-                li.dropdown
-                  a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-expanded='false')
-                    | 節能服務
-                    span.caret
-                  ul.dropdown-menu(role='menu')
-                    li
-                      a(href='./LED.html') 節能照明系統
-                li.dropdown
-                  a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-expanded='false')
-                    | 綠色能源
-                    span.caret
-                  ul.dropdown-menu(role='menu')
-                    li
-                      a(href='./PV.html') 太陽光電發電系統
-                    li.divider
-                    li
-                      a(href='./Money.html') 電能躉購費率
-                    li
-                      a(href='http://www.mrpv.org.tw/uploads/20140212162503-1142442397.pdf' target="_blank") 參考日照資料
-                    li
-                      a(href='./PVset.html') 太陽能申設流程圖
-                    //- li
-                      a(href='./PVset.html') 設置費用試算
-                li.dropdown
-                  a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-expanded='false')
-                    | 智能監控
-                    span.caret
-                  ul.dropdown-menu(role='menu')
-                    li
-                      a(href='./Smart.html') 智能監控
-                li.dropdown
-                  a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-expanded='false')
-                    | 修繕改裝
-                    span.caret
-                  ul.dropdown-menu(role='menu')
-                    li
-                      a(href='./Fix.html') 修繕改裝
+                li
+                  a(href='home.html') 幸福包裹
+                li
+                  a(href='shop.html') 禮物百貨
               ul.nav.navbar-nav.navbar-right
                 li
-                  a(href='#contact', data-toggle='modal', data-target='#contect') 聯絡我們
+                  a(href='cart.html') 禮物籃
                 li.dropdown
                   a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-expanded='false')
-                    | 資訊分享
+                    | 禮物箱
                     span.caret
                   ul.dropdown-menu(role='menu')
                     li
-                      a(href='./ESCO.html') ESCO 合作模式
+                      a(href='./status.html') 禮物狀況
                     li
-                      a(href='./Supply.html') 政府獎勵/補助資訊
+                      a(href='./be.html') 後台管理
+                    li
+                      a(href='./login.html') 登入/登出
 
     block content
 
