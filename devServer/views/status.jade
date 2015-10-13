@@ -1,0 +1,30 @@
+extends container
+
+block head
+  link(rel="stylesheet", href="asset/stylesheets/main.css")
+
+block content
+  .container
+    .col-md-6
+      img.featurette-image.img-responsive(src='asset/img/status/gift01.jpg', alt='gift', style="border-radius:8px")
+    .col-md-6
+      br
+      br
+      .list-group
+        a.list-group-item(href='#')
+          h4.list-group-item-heading 選購禮物
+          p.list-group-item-text 選購您喜歡的禮物, 並選擇送禮時間
+        a.list-group-item.active(href='#')
+          h4.list-group-item-heading 準備送禮中...
+          p.list-group-item-text 可能日期還沒到, 可能還在包裝禮物, 稍待片刻就會送出去喔
+        a.list-group-item(href='#')
+          h4.list-group-item-heading 禮物已送達!
+          p.list-group-item-text 禮物已經送達囉！稍待幾天收禮人會有小感動的回覆。
+        a.list-group-item(href='#')
+          h4.list-group-item-heading 受贈者回覆：
+          p.list-group-item-text ...
+        a.list-group-item(href='#')
+          h4.list-group-item-heading 贈送完成！
+          p.list-group-item-text 「幸福包裹」謝謝您的關心與愛心
+  include footer
+
