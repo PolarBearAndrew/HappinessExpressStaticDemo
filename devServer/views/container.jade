@@ -1,8 +1,84 @@
-<!DOCTYPE html>
+doctype html
 html(lang="en")
-head
-  meta(charset="UTF-8")
-  title 幸福包裹
-  block head
-body
-  block content
+  head
+    meta(charset="UTF-8")
+    title 幸福包裹
+
+    link(href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css', rel='stylesheet')
+    link(href='https://fonts.googleapis.com/css?family=Audiowide', rel='stylesheet', type='text/css')
+    link(href='asset/stylesheets/default.css', rel='stylesheet')
+
+    block head
+
+  body
+    .navbar-wrapper
+      .container
+        //- nav.navbar.navbar-default.navbar-static-top(role='navigation')
+        nav.navbar.navbar-default.navbar-static-top(role='navigation')
+          .container
+            .navbar-header
+              a.logo(href='./' )
+                img(src="/asset/img/icon/icon-title.png", alt="", style="width:140px; margin-top:4px")
+            #navbar.navbar-collapse.collapse
+              ul.nav.navbar-nav
+                li.dropdown
+                  a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-expanded='false')
+                    | 節能服務
+                    span.caret
+                  ul.dropdown-menu(role='menu')
+                    li
+                      a(href='./LED.html') 節能照明系統
+                li.dropdown
+                  a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-expanded='false')
+                    | 綠色能源
+                    span.caret
+                  ul.dropdown-menu(role='menu')
+                    li
+                      a(href='./PV.html') 太陽光電發電系統
+                    li.divider
+                    li
+                      a(href='./Money.html') 電能躉購費率
+                    li
+                      a(href='http://www.mrpv.org.tw/uploads/20140212162503-1142442397.pdf' target="_blank") 參考日照資料
+                    li
+                      a(href='./PVset.html') 太陽能申設流程圖
+                    //- li
+                      a(href='./PVset.html') 設置費用試算
+                li.dropdown
+                  a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-expanded='false')
+                    | 智能監控
+                    span.caret
+                  ul.dropdown-menu(role='menu')
+                    li
+                      a(href='./Smart.html') 智能監控
+                li.dropdown
+                  a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-expanded='false')
+                    | 修繕改裝
+                    span.caret
+                  ul.dropdown-menu(role='menu')
+                    li
+                      a(href='./Fix.html') 修繕改裝
+              ul.nav.navbar-nav.navbar-right
+                li
+                  a(href='#contact', data-toggle='modal', data-target='#contect') 聯絡我們
+                li.dropdown
+                  a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-expanded='false')
+                    | 資訊分享
+                    span.caret
+                  ul.dropdown-menu(role='menu')
+                    li
+                      a(href='./ESCO.html') ESCO 合作模式
+                    li
+                      a(href='./Supply.html') 政府獎勵/補助資訊
+
+    block content
+
+    script(src='https://code.jquery.com/jquery-1.11.1.min.js')
+    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js')
+
+    script(src='asset/javascripts/default.js')
+    script(src='asset/javascripts/default2.js')
+    script(src='asset/javascripts/default3-bugs.js')
+
+
+
